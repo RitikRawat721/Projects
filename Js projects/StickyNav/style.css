@@ -1,0 +1,46 @@
+body{
+    background-color: darkgray;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 10px;
+}
+nav {
+    margin-left: 0;
+    position: relative;
+    padding: .5rem;
+}
+
+nav li {
+    border: 2px solid;
+    padding: 10px;
+    width: 80px;
+    background-color: black;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li:hover{
+    background-color: rgb(70, 68, 68);
+}
+
+nav li a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+nav li a:hover{
+    color: hotpink;
+}
+
+
+
+.active{
+    color: hotpink;
+    background-color: rgb(70, 68, 68);
+}

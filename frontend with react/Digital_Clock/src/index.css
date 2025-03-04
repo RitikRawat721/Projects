@@ -1,0 +1,26 @@
+body {
+    background-image: url(assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-attachment: fixed;
+    display: flex; /*flex and justify content is requierd to horizontally align*/
+    justify-content: center;
+    min-height: 100vh; /*by setting viewport height 100%*/
+    align-items: center; /*and align items center our clock will align horizontally*/
+}
+
+.clock-container{
+    backdrop-filter: blur(5px); /*for blur effect in the back*/
+    width: 100%;
+    padding: 10px 0;
+}
+
+.clock{
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family:monospace;
+    text-align: center;    
+}

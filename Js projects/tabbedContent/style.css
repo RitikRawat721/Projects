@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid darkslateblue;;
+}
+
+nav ul li {
+    padding: 10px;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: rgb(172, 207, 239);
+    border-top: 2px solid darkslateblue;
+    border-left: 2px solid darkslateblue;
+    border-right: 2px solid darkslateblue;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+nav ul li:hover {
+    background-color: rgb(25, 21, 53);
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+.active{
+    background-color: rgb(25, 21, 53);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}

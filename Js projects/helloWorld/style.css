@@ -1,0 +1,31 @@
+body {
+    padding: 4rem;
+    text-align: center;
+    font-family: monospace;
+    background-color: grey;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 3rem;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    background-color: black;
+}
+button {
+    color: blueviolet;
+    padding: 5px 30px;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(23, 23, 23, 0.92);
+    transition: 0.5s;
+}
+
+button:hover {
+    color: black;
+    background-color: gold;
+    box-shadow: 5px 5px 5px rgba(156, 128, 16, 0.92);
+}

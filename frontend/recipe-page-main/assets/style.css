@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --bc-container: hsl(0, 0%, 100%);
+    --bc-prep-container: hsl(330, 100%, 98%);
+    --fc-h1: hsl(24, 5%, 18%);
+    --fc-h4: hsl(332, 51%, 32%);
+    --fc-heading: hsl(14, 45%, 36%);
+    --fc-li-p: hsl(30, 10%, 34%);
+    --fc-container: hsl(30, 54%, 90%);
+    --c-hr: hsl(30, 18%, 87%);
+
+    --ff-outifit: "Outfit";
+    --fw-outfit400: 400;
+
+    --f-young: "Young Serif", serif;
+    --fw-young400: 400;
+    --fw-young600: 600;
+    --fw-young700: 700;
+
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--fc-container);
+    font-family: var(--f-young);
+    font-size: 16px;
+    color:var(--fc-heading);
+}
+
+ul, ol{
+    padding: 0 2rem;
+}
+.dish-image{
+    display: block;
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+h1, h2, h3, h4{
+    line-height: 3rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-top: 2.1rem;
+    margin-bottom: 1.2rem;
+    color: var(--fc-h1);
+    font-weight: var(--fw-young400);
+    font-style: normal;
+}
+
+h4{
+    font-family: var(--ff-outifit);
+    color: var(--fc-h4);
+    font-weight: 700;
+}
+
+.ingredients-heading,.instructions-heading,.nutrient-heading{
+    font-size: 1.7rem;
+    font-weight: var(--fw-young400);
+}
+
+.ingredients-heading{
+    margin: 1.3em 0;
+    margin-bottom: 1rem;
+}
+
+.instructions-heading,.nutrient-heading{
+    margin-top: 1.8rem;
+    margin-bottom: .8rem;
+}
+
+p{
+    line-height: 1.4rem;
+}
+
+li, p {
+    font-family: var(--ff-outifit);
+    font-weight: var(--fw-outfit400);
+    color: var(--fc-li-p);
+}
+
+li {
+    padding-left: 1.5rem;
+    color: var(--fc-heading );
+}
+
+ol li{
+    font-family: var(--ff-outifit);
+    font-weight: 800;
+    font-style: normal;
+}
+
+.prep-time-container h4, h2{
+    margin-bottom: 10px ;
+    font-size: 1.1rem;
+}
+
+.prep-time-container ul li{
+    padding-left: 1.5rem;
+    color: var(--fc-h4)
+}
+
+.prep-time-container ul li + *, li + * {
+    margin-top: .6rem;
+}
+
+.about-dish{
+    margin-bottom: 1.5rem;
+}
+
+hr{
+    margin-top: 2.3rem;
+    color: var(--c-hr);
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.recipe-container{
+    margin: 5rem 0;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 45em;
+    background: var(--bc-container) ;
+}
+
+.prep-time-container{
+    background: var(--bc-prep-container);
+    padding: 0 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    margin-bottom: 1.5rem;
+    display: block;
+} 
+
+.nutrients-description{
+    margin-bottom: .3rem;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.nutrient {
+    border-bottom: 0.5px solid var(--c-hr);
+}
+
+tr td {
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       padding-left: 2rem;
+       font-family: var(--ff-outifit);
+       font-weight: var(--fw-outfit400);
+       color: var(--fc-li-p);
+}
+
+tr td + * {
+    padding-left: 5rem;
+    color: var(--fc-heading);
+    font-weight: bold;
+}
+
